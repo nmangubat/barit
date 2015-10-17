@@ -10,7 +10,7 @@ nav {
 	position: fixed;
 	padding: 20px;
 	background: rgba( 0,0,0, .8 );
-	border-bottom: 2px solid #fff; 
+	border-bottom: 2px solid #fff;
 }
 
 ul {
@@ -18,7 +18,7 @@ ul {
 }
 
 nav li {
-	display: inline;	
+	display: inline;
 }
 
 nav a {
@@ -28,11 +28,11 @@ nav a {
 
 nav a:hover, a:focus {
 	color: #ccc;
-	text-decoration: none;	
+	text-decoration: none;
 }
 
 .logo {
-	background: url( http://www.cabodiningguide.com/wp-content/uploads/2012/11/Retro-burger-bar-logo.png ) center center no-repeat; 
+	background: url( http://www.cabodiningguide.com/wp-content/uploads/2012/11/Retro-burger-bar-logo.png ) center center no-repeat;
 	height: 60px;
 	width: 60px;
 	background-size: cover;
@@ -40,8 +40,8 @@ nav a:hover, a:focus {
 }
 
 #map {
-  max-height: 1000px;
+  height: 400px;
 /*  width: 100%;
 /*  or*/
-  max-width: 1000px;
+  width: 100%;
 }
