@@ -39,6 +39,9 @@ nav a:hover, a:focus {
 	border: 1px solid #fff;
 }
 
-html, body {height: 100%; margin: 0; padding: 0; }
-
-#map {height:100%; }
+#map {
+  max-height: 1000px;
+/*  width: 100%;
+/*  or*/
+  max-width: 1000px;
+}
