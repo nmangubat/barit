@@ -42,6 +42,7 @@
 	function initMap() {
 		map = new google.maps.Map(document.getElementById("map"), {
 			center: {lat: -34.397, lng: 150.644},
+			scrollwheel: false,
 			zoom: 8
 		})
 	}
@@ -49,7 +50,7 @@
 	</script>
 	<script async defer
 		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDeFnO4bGhqW9JK2yX-RS6I_mvgHB4Svks&callback=initMap">
-	</script>	
+	</script>		
 
 
 
