@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html ng-app="barit">
+<head>
+	<title>BarIt!</title>
+	<!-- link your tools -->
+	<script type="text/javascript" src="bower_components/angular/angular.min.js"></script>
+	<script type="text/javascript" src="bower_components/angular-bootstrap/ui-bootstrap.min.js"></script>
+	<script type="text/javascript" src="bower_components/angular-ui-router/release/angular-ui-router.min.js"></script>
+	<script type="text/javascript" src="domain/js/app.js"></script>
+	<script type="text/javascript" src="domain/js/controller.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="domain/css/style.css">
+
+</head>
+<body>
+	<nav>
+		<div class="container">
+			<div class="logo"></div>
+			<ul class="pull-right">
+				<li><a ui-sref="home">Home</a></li>
+				<li><a ui-sref="map">Map</a></li>
+			</ul>
+		</div>
+	</nav>
+
+	<div class="headerimg"></div>
+
+<!-- 	<form>
+		<input type="text" name="location" ng-model="zipcode">
+		<button ng-click="googleApiFunction()"></button>
+	</form> -->
+	
+<!-- 	form to sumbit bar location of interest -->
+	<div ui-view></div>
+
+</body>
+</html>
