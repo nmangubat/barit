@@ -1,0 +1,11 @@
+working notes:
+
+task 1: add google map API (13:14)
+	13:16 chose maps embed api
+	13:18 looked at github code
+	13:23 trying to add iframe of embeded coded
+	13:26 looking at xframe options error
+		adding xframe response header (13:34)
+
+	try 2: google maps JS API 13:45	
+	13:53 adding code and seeing it fly

@@ -11,6 +11,14 @@
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.5/css/bootstrap.min.css">
 	<link rel="stylesheet" type="text/css" href="domain/css/style.css">
 
+<!-- <system.webServer>
+	<httpProtocol>
+		<customHeaders>
+			<add name="X-Frame-Options" value="SAMEORIGIN"/>
+		</customHeaders>
+	</httpProtocol>	
+</system.webServer> -->
+
 </head>
 <body>
 	<nav>
@@ -23,13 +31,39 @@
 		</div>
 	</nav>
 
+
+
 	<div class="headerimg"></div>
+
+	<div id="map"></div>
+	<script type="text/javascript">
+
+	var map;
+	function initMap() {
+		map = new google.maps.Map(document.getElementById("map"), {
+			center: {lat: -34.397, lng: 150.644},
+			zoom: 8
+		})
+	}
+
+	</script>
+	<script async defer
+		src="https://maps.googleapis.com/maps/api/js?key=AIzaSyDeFnO4bGhqW9JK2yX-RS6I_mvgHB4Svks&callback=initMap">
+	</script>	
+
+
+
+<!-- <iframe width="600" height="450" frameborder="0" style="border:0"
+src="https://www.google.com/maps/embed/v1/undefined?origin=...&q=...&destination=...&center=...&zoom=...&key=..." allowfullscreen sandbox="allow-same-origin"></iframe> -->
+
+
+
 
 <!-- 	<form>
 		<input type="text" name="location" ng-model="zipcode">
 		<button ng-click="googleApiFunction()"></button>
 	</form> -->
-	
+
 <!-- 	form to sumbit bar location of interest -->
 	<div ui-view></div>
 
